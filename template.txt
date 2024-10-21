@@ -1,0 +1,110 @@
+variable "user" {
+  description = "Login information"
+  type        = map
+  default     = {
+    username = "{{ username }}"
+    password = "{{ password }}"
+    url      = "https://{{ url }}"
+  }
+}
+variable "vRF"{
+    description = "vRF"
+    default = "{{ vRF }}"
+}
+variable "vRF_path"{
+    description = "Caminho da vRF"
+    default = "{{ vRF_path }}"
+}
+variable "int_to_spine_01"{
+    default = "{{ int_to_spine_01 }}"
+}
+variable "int_to_spine_02"{
+    default = "{{ int_to_spine_02 }}"
+}
+variable "description_interface01" {
+    default = "{{ description_interface01 }}"
+  
+}
+variable "description_interface02" {
+    default = "{{ description_interface02 }}"
+  
+}
+variable "subint_to_spine_01"{
+    description = "Sub-Interface fisica para o Spine 01"
+    default = "{{ subint_to_spine_01 }}"
+}
+variable "subint_to_spine_02"{
+    description = "Sub-Interface fisica para o Spine 01"
+    default = "{{ subint_to_spine_02 }}"
+}
+variable "mtu"{
+    default = 9150
+}
+variable "encap_vlan4"{
+    default = "vlan-4"
+}
+variable "IP_subint_to_spine_01"{
+    description = "IP da Sub-Interface que vai para o Spine 01"
+    default = "{{ IP_subint_to_spine_01 }}"
+}
+variable "IP_subint_to_spine_02"{
+    description = "IP da Sub-Interface que vai para o Spine 01"
+    default = "{{ IP_subint_to_spine_02 }}"
+}
+variable "status"{
+    default = "enabled"
+}
+variable "area_ospf"{
+    default = "{{ area_ospf }}"
+}
+variable "rid_ospf"{
+    default = "{{ rid_ospf }}"
+}
+variable "p2p_ospf"{
+    default = "{{ p2p_ospf }}"
+}
+variable "dhcp_relay01"{
+    default = "{{ dhcp_relay01 }}"
+}
+variable "dhcp_relay02"{
+    default = "{{ dhcp_relay02 }}"
+}
+variable "dhcp_relay03"{
+    default = "{{ dhcp_relay03 }}"
+}
+variable "ip_loopback"{
+    default = "{{ ip_loopback }}"
+}
+variable "GiPo"{
+    default =  "225.0.0.0/15"
+}
+variable "rp_address"{
+    default = "239.255.255.240/28"
+}
+variable "loopback"{
+    default = "{{ loopback }}"
+}
+variable "int_wan_01"{
+    default = "{{ int_wan_01 }}"
+}
+variable "int_wan_02"{
+    default = "{{ int_wan_02 }}"
+}
+variable "ip_int_wan_01"{
+    default = "{{ ip_int_wan_01 }}"
+}
+variable "ip_int_wan_02"{
+    default = "{{ ip_int_wan_02 }}"
+}
+variable "l3"{
+    default = "Layer3"
+}
+variable "rp_name"{
+    default = "{{ rp_name }}"
+}
+variable "disabled" {
+    default = "disabled"
+}
+variable "up" {
+  default = "up"
+}
